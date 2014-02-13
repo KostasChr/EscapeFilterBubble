@@ -12,4 +12,16 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <bean id="analyzer" class="gr.ntua.imu.escapefilterbubble.topics.analyzer.AnalyzerImpl">
+        <property name="numberOfTopics" value="50"/>
+        <property name="numberOfIterations" value="400"/>
+        <property name="alpha" value="0.01"/>
+        <property name="beta" value="0.01"/>
+        <property name="source" ref="fileSource"/>
+    </bean>
+    <bean id="fileSource"
+          class="gr.ntua.imu.escapefilterbubble.topics.data.FileSource">
+        <property name="filePath" value="c:\tmp\example.txt"/>
+    </bean>
+
 </beans>
