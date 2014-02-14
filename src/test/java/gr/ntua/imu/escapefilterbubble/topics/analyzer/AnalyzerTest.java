@@ -15,7 +15,7 @@ import java.util.HashSet;
 import static org.mockito.Mockito.when;
 
 /**
- * User: Kostas Christidis
+ * @author KostasChr
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("file:src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml")

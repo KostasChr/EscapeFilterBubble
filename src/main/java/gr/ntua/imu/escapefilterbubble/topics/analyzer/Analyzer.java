@@ -3,7 +3,7 @@ package gr.ntua.imu.escapefilterbubble.topics.analyzer;
 import java.util.Set;
 
 /**
- * User: Kostas Christidis
+ * @author KostasChr
  */
 public interface Analyzer {
     void loadTrainSet();

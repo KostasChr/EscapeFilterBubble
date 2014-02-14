@@ -13,7 +13,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 /**
- * User: Kostas Christidis
+ * @author KostasChr
  */
 public class AnalyzerImpl implements Analyzer {
 
