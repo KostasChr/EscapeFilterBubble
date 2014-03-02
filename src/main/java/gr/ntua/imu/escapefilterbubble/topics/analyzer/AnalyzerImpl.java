@@ -6,7 +6,7 @@ import cc.mallet.topics.ParallelTopicModel;
 import cc.mallet.types.Alphabet;
 import cc.mallet.types.IDSorter;
 import cc.mallet.types.InstanceList;
-import gr.ntua.imu.escapefilterbubble.topics.data.Source;
+import gr.ntua.imu.escapefilterbubble.topics.data.FileSource;
 
 import java.io.IOException;
 import java.util.*;
@@ -23,7 +23,7 @@ public class AnalyzerImpl implements Analyzer {
     private Double alpha;
     private Double beta;
     private ParallelTopicModel topicModel;
-    private Source source;
+    private FileSource source;
     private ArrayList<TreeSet<IDSorter>> topicSortedWords;
     private double[] topicDistribution;
     private Alphabet dataAlphabet;
@@ -32,8 +32,8 @@ public class AnalyzerImpl implements Analyzer {
     public void loadTrainSet() {
         try {
             setPipe(buildPipe());
-            getSource().readDocuments();
-            String[] documents = getSource().getDocuments().toArray(new String[]{});
+            source.readDocuments();
+            String[] documents = source.getDocuments().toArray(new String[]{});
             StringArrayIterator iterator = new StringArrayIterator(documents);
             InstanceList instances = new InstanceList(this.getPipe());
             instances.addThruPipe(iterator);
@@ -144,11 +144,11 @@ public class AnalyzerImpl implements Analyzer {
         this.topicModel = topicModel;
     }
 
-    public Source getSource() {
+    public FileSource getSource() {
         return source;
     }
 
-    public void setSource(Source source) {
+    public void setSource(FileSource source) {
         this.source = source;
     }
 
