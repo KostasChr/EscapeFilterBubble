@@ -40,6 +40,9 @@
     </bean>
 
 
+    <bean id="precision" class="gr.ntua.imu.escapefilterbubble.metric.metric.Precision">
+    </bean>
+
     <bean id="analyzer" class="gr.ntua.imu.escapefilterbubble.topics.analyzer.AnalyzerImpl">
         <property name="numberOfTopics" value="50"/>
         <property name="numberOfIterations" value="400"/>
