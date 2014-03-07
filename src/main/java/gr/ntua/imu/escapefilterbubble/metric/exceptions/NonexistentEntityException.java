@@ -1,4 +1,4 @@
-package gr.ntua.imu.escapefilterbubble.metric.metric.exceptions;
+package gr.ntua.imu.escapefilterbubble.metric.exceptions;
 
 public class NonexistentEntityException extends Exception {
     public NonexistentEntityException(String message, Throwable cause) {

@@ -1,4 +1,4 @@
-package gr.ntua.imu.escapefilterbubble.metric.metric;
+package gr.ntua.imu.escapefilterbubble.metric.single;
 
 /**
  * @author KostasChr

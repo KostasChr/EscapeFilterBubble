@@ -1,7 +1,7 @@
 package gr.ntua.imu.escapefilterbubble.metric;
 
-import gr.ntua.imu.escapefilterbubble.metric.metric.Precision;
-import gr.ntua.imu.escapefilterbubble.metric.metric.Recall;
+import gr.ntua.imu.escapefilterbubble.metric.single.Precision;
+import gr.ntua.imu.escapefilterbubble.metric.single.Recall;
 import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;

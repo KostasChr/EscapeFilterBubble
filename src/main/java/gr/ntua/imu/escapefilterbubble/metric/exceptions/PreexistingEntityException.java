@@ -1,4 +1,4 @@
-package gr.ntua.imu.escapefilterbubble.metric.metric.exceptions;
+package gr.ntua.imu.escapefilterbubble.metric.exceptions;
 
 public class PreexistingEntityException extends Exception {
     public PreexistingEntityException(String message, Throwable cause) {

@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package gr.ntua.imu.escapefilterbubble.metric.metric;
+package gr.ntua.imu.escapefilterbubble.metric.multi;
 
 /**
  * @author kostas

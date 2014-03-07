@@ -40,11 +40,11 @@
     </bean>
 
 
-    <bean id="precision" class="gr.ntua.imu.escapefilterbubble.metric.metric.Precision">
+    <bean id="precision" class="gr.ntua.imu.escapefilterbubble.metric.single.Precision">
     </bean>
 
 
-    <bean id="recall" class="gr.ntua.imu.escapefilterbubble.metric.metric.Recall">
+    <bean id="recall" class="gr.ntua.imu.escapefilterbubble.metric.single.Recall">
     </bean>
 
     <bean id="analyzer" class="gr.ntua.imu.escapefilterbubble.topics.analyzer.AnalyzerImpl">
