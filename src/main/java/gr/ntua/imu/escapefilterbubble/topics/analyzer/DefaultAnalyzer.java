@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 /**
  * @author KostasChr
  */
-public class AnalyzerImpl implements Analyzer {
+public class DefaultAnalyzer implements Analyzer {
 
     private Pipe pipe;
     private Integer numberOfTopics;
@@ -49,16 +49,13 @@ public class AnalyzerImpl implements Analyzer {
     private Pipe buildPipe() {
 
         ArrayList pipeList = new ArrayList();
-
         pipeList.add(new Input2CharSequence("UTF-8"));
-
         Pattern tokenPattern =
                 Pattern.compile("[\\p{L}\\p{N}_]{3,}+");
         pipeList.add(new CharSequence2TokenSequence(tokenPattern));
         pipeList.add(new TokenSequenceLowercase());
         pipeList.add(new TokenSequenceRemoveStopwords(false, false));
         pipeList.add(new TokenSequence2FeatureSequence());
-
         return new SerialPipes(pipeList);
     }
 

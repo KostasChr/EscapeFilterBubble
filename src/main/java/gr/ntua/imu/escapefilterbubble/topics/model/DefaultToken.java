@@ -3,12 +3,12 @@ package gr.ntua.imu.escapefilterbubble.topics.model;
 /**
  * @author KostasChr
  */
-public class TokenImpl implements Token, Comparable<Token> {
+public class DefaultToken implements Token, Comparable<Token> {
 
     private Double probability;
     private String token;
 
-    public TokenImpl(String word1, Double v) {
+    public DefaultToken(String word1, Double v) {
         this.probability = v;
         this.token = word1;
 

@@ -37,7 +37,7 @@ public class AnalyzerTest {
     }
 
     @Autowired
-    private AnalyzerImpl analyzer;
+    private DefaultAnalyzer analyzer;
 
     @Test
     public void testEstimation() {

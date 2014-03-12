@@ -10,7 +10,7 @@ import java.util.PriorityQueue;
  * @author KostasChr
  */
 @Document
-public class TopicImpl implements Comparable<Topic>, Topic, Serializable {
+public class DefaultTopic implements Comparable<Topic>, Topic, Serializable {
 
     @Id
     private Integer id;

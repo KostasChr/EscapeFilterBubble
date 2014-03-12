@@ -47,7 +47,7 @@
     <bean id="recall" class="gr.ntua.imu.escapefilterbubble.metric.single.Recall">
     </bean>
 
-    <bean id="analyzer" class="gr.ntua.imu.escapefilterbubble.topics.analyzer.AnalyzerImpl">
+    <bean id="analyzer" class="gr.ntua.imu.escapefilterbubble.topics.analyzer.DefaultAnalyzer">
         <property name="numberOfTopics" value="50"/>
         <property name="numberOfIterations" value="400"/>
         <property name="alpha" value="0.01"/>
@@ -55,7 +55,7 @@
         <property name="source" ref="fileSource"/>
     </bean>
     <bean id="fileSource"
-          class="gr.ntua.imu.escapefilterbubble.topics.data.FileSourceImpl">
+          class="gr.ntua.imu.escapefilterbubble.topics.data.DefaultFileSource">
         <property name="filePath" value="c:\tmp\example.txt"/>
     </bean>
 

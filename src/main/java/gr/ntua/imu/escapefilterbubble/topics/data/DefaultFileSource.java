@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 /**
  * @author Kostas Christidis
  */
-public class FileSourceImpl implements FileSource, Serializable {
+public class DefaultFileSource implements FileSource, Serializable {
 
     private static FileSource instance;
     private String filePath;
@@ -24,7 +24,7 @@ public class FileSourceImpl implements FileSource, Serializable {
 
     public static FileSource getInstance() {
         if (instance == null) {
-            instance = new FileSourceImpl();
+            instance = new DefaultFileSource();
         }
         return instance;
     }
